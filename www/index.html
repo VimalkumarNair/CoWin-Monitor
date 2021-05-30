@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="css/index.css">
+    <title>CO-Win Monitor</title>
+</head>
+
+<body>
+    <div id="deviceready" style="margin: 10px; height: 100%">
+        <p>
+            <span>Last refresh at: </span><span id="lastRefresh"></span>
+            <span style="float: right;">
+                <input type="button" onclick="getStatus()" value="Refresh"></input>
+            </span>
+        </p>
+        <span id="messages"></span>
+    </div>
+    <script src="cordova.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
